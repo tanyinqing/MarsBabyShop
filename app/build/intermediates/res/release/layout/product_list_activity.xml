@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/linRank"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/segment_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@id/textRankSale"
+                    style="@style/style_13_4B4B4B_BOLD"
+                    android:layout_width="60.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/segment_selected_1_bg"
+                    android:gravity="center"
+                    android:text="@string/sales" />
+
+                <TextView
+                    android:id="@id/textRankPrice"
+                    style="@style/style_13_4B4B4B_BOLD"
+                    android:layout_width="60.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/segment_normal_2_bg"
+                    android:gravity="center"
+                    android:text="@string/price" />
+
+                <TextView
+                    android:id="@id/textRankGood"
+                    style="@style/style_13_4B4B4B_BOLD"
+                    android:layout_width="60.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/segment_normal_3_bg"
+                    android:gravity="center"
+                    android:text="@string/goodDegree" />
+
+                <TextView
+                    android:id="@id/textRankTime"
+                    style="@style/style_13_4B4B4B_BOLD"
+                    android:layout_width="60.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/segment_normal_3_bg"
+                    android:gravity="center"
+                    android:text="@string/groundingTime" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/productList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linRank"
+                 android:cacheColorHint="#00000000"
+                android:divider="@drawable/listview_item_line"
+                android:listSelector="@anim/index_item_bg" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productList"
+                android:src="@drawable/listview_item_line" />
+
+            <TextView
+                android:id="@id/textNull"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="暂无商品"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/bottombar"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+</LinearLayout><!-- From: file:/D:/studiospace/MarsBabyShop/app/src/main/res/layout/product_list_activity.xml -->

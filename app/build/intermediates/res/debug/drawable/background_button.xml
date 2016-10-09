@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按下后的背景状态 -->
+    <item android:state_pressed="true">
+        <inset
+            android:insetLeft="@dimen/widgetPadding"
+            android:insetTop="@dimen/widgetPadding"
+            android:insetRight="@dimen/widgetPadding"
+            android:insetBottom="@dimen/widgetPadding">
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/buttonRadius" />
+                <solid android:color="@color/primaryDarkBlue" />
+            </shape>
+        </inset>
+    </item>
+    <!-- 默认的背景状态 -->
+    <item>
+        <inset
+            android:insetLeft="@dimen/widgetPadding"
+            android:insetTop="@dimen/widgetPadding"
+            android:insetRight="@dimen/widgetPadding"
+            android:insetBottom="@dimen/widgetPadding">
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/buttonRadius" />
+                <solid android:color="@color/primaryBlue" />
+            </shape>
+        </inset>
+    </item>
+</selector><!-- From: file:/D:/studiospace/MarsBabyShop/app/src/main/res/drawable/background_button.xml -->

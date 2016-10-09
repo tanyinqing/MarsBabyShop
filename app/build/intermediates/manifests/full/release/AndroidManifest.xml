@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xlw.marsbabyshop"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="com.xlw.babyshop.application.XlwApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.SearchProductListActivity"
+            android:label="@string/title_activity_search_product_list" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.CategoryActivity"
+            android:label="@string/title_activity_category" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.ProductListActivity"
+            android:label="@string/title_activity_product_list" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.ProductDetailActivity"
+            android:label="@string/title_activity_product_detail" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.ShoppingCarActivity"
+            android:label="@string/title_activity_shopping_car" >
+        </activity>
+
+        <service
+            android:name="com.xlw.babyshop.service.ShopServiceManager"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.PaymentCenterActivity"
+            android:label="@string/title_activity_payment_center" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.OrderSubmitOkActivity"
+            android:label="@string/title_activity_ordr_submit_ok" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.AccountActivity"
+            android:label="@string/title_activity_account" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.SelectAddressActivity"
+            android:label="@string/title_activity_select_address" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.AddressManageActivity"
+            android:label="@string/title_activity_address_manage" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.AddAddressActivity"
+            android:label="@string/title_activity_add_address" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.OrderListActivity"
+            android:label="@string/title_activity_order_list" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.MyFavoriteActivity"
+            android:label="@string/title_activity_my_favorite" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.LimitbuyActivity"
+            android:label="@string/title_activity_limitbuy" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.BulletinActivity"
+            android:label="@string/title_activity_bulletin" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.TopicProductListActivity"
+            android:label="@string/title_activity_topic_product_list" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.BrandActivity"
+            android:label="@string/title_activity_brand" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.NewproductActivity"
+            android:label="@string/title_activity_newproduct" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.HotproductActivity"
+            android:label="@string/title_activity_hotproduct" >
+        </activity>
+        <activity
+            android:name="com.xlw.babyshop.ui.activity.OrderDetailActivity"
+            android:label="@string/title_activity_order_detail" >
+        </activity>
+    </application>
+
+</manifest>
